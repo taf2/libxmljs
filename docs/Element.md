@@ -24,7 +24,7 @@ Instantiation
 > **returns:** a new element object
 > ### Arguments  
 > * **name** - a string representing the name of the element  
-> * **attrs** - a has of `{name => value}` pairs to set as attributes  
+> * **attrs** - a hash of `{name => value}` pairs to set as attributes  
 
 `new libxml.Element(name, callback)`
 > Creates a new element object called `name` then calls `callback` passing the  
