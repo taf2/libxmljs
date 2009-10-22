@@ -7,15 +7,15 @@ It also plays nicely with [node.js](http://github.com/ry/node)
 ### Requirements
 
 > * [libxml](http://xmlsoft.org/)
-> * [v8](http://code.google.com/apis/v8/intro.html) _(only to build the standalone version)_
-> * [node.js](http://github.com/ry/node) _(if you want to build the node.js plugin)_
+> * [v8](http://code.google.com/apis/v8/intro.html) _(for the standalone version)_
+> * [node.js](http://github.com/ry/node) _(for the node.js version)_
 
 ### Building
 To build the node.js plugin use:
 
     scons libxmljs.node
 
-Standalone version is coming soon
+_Standalone version is coming soon_
 
 
 ## Using
