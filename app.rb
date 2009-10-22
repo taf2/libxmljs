@@ -15,7 +15,8 @@ get '/style.css' do
 end
 
 get '/' do
-  haml BlueCloth.new(File.read('README.md')).to_html
+  @content = BlueCloth.new(File.read('README.md')).to_html
+  haml '', :ugly => true
 end
 
 get '/:page' do |page|
@@ -23,5 +24,6 @@ get '/:page' do |page|
 
   @rendered_pages ||= {}
   @rendered_pages[page] ||= BlueCloth.new(File.read("docs/#{page}.md")).to_html
-  haml @rendered_pages[page]
+  @content = @rendered_pages[page]
+  haml '', :ugly => true
 end
