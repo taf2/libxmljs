@@ -27,6 +27,14 @@ Instantiation
 > * **version** - a string representing the desired document version  
 > * **encoding** - a string representing the desired document encoding  
 
+`new libxml.Document(version, encoding, callback);`
+> Instantiate a new document setting the version to `version` and the encoding
+> to `encoding`.  
+> **returns:** a new document object
+> ### Arguments  
+> * **version** - a string representing the desired document version  
+> * **encoding** - a string representing the desired document encoding  
+> * **callback** - a function that accepts the new document as an argument  
 
 Methods
 -------
@@ -66,12 +74,12 @@ Methods
 `get(xpath)`
 > A convenience method to search the document and get the first node in the
 > results  
-> See [Element#find](/element) for more information  
+> See [Element#get](/element) for more information  
 > **returns:** a element object or `null`
 
 `node([args])`
 > A convenience method for creating and setting the root node  
-> See [new libxml.Element](/element) for more information
+> See [new libxml.Element](/element) for the full spec
 
 `root()`
 > The root element of the document  
@@ -81,6 +89,6 @@ Methods
 > Renders the document to a string  
 > **returns:** a string representation of the document
 
-`version`
+`version()`
 > Gets the document version.  
 > **returns:** a string representation of the document version
