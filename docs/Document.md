@@ -12,12 +12,27 @@ Instantiation
 > encoding to *UTF-8*.  
 > **returns:** a new document object
 
+`new libxml.Document(callback);`
+> Instantiate a new document object defaulting the version to *1.0* and the
+> encoding to *UTF-8*.  
+> **returns:** a new document object  
+> ### Arguments  
+> * **callback** - a function that accepts the new document object
+
 `new libxml.Document(version);`
 > Instantiate a new document setting the version to `version` and defaulting
 > the encoding to *UTF-8*.  
 > **returns:** a new document object
 > ### Arguments  
 > * **version** - a string representing the desired document version  
+
+`new libxml.Document(version, callback);`
+> Instantiate a new document setting the version to `version` and defaulting
+> the encoding to *UTF-8*.  
+> **returns:** a new document object
+> ### Arguments  
+> * **version** - a string representing the desired document version  
+> * **callback** - a function that accepts the new document object
 
 `new libxml.Document(version, encoding);`
 > Instantiate a new document setting the version to `version` and the encoding
