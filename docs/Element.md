@@ -6,54 +6,61 @@ The Element class represents an element node in the XML tree.
 Instantiation
 -------------
 
-`new libxml.Element(name)`
+`new libxml.Element(doc, name)`
 > Creates a new element object called `name`  
 > **returns:** a new element object
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 
-`new libxml.Element(name, content)`
+`new libxml.Element(doc, name, content)`
 > Creates a new element object called `name` with `content` as its content  
 > **returns:** a new element object
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 > * **content** - a string representing the content to add to the node  
 
-`new libxml.Element(name, attrs)`
+`new libxml.Element(doc, name, attrs)`
 > Creates a new element object called `name` with `attrs` as its attributes  
 > **returns:** a new element object
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 > * **attrs** - a hash of `{name => value}` pairs to set as attributes  
 
-`new libxml.Element(name, callback)`
+`new libxml.Element(doc, name, callback)`
 > Creates a new element object called `name` then calls `callback` passing the  
 > new object as an argument.  
 > **returns:** a new element object  
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 > * **callback** - a function that will accept the new object as an argument  
 
-`new libxml.Element(name, attrs, content)`
+`new libxml.Element(doc, name, attrs, content)`
 > Creates a new element object called `name` with `attrs` as its attributes  
 > **returns:** a new element object
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 > * **attrs** - a has of `{name => value}` pairs to set as attributes  
 > * **content** - a string representing the content to add to the node  
 
-`new libxml.Element(name, attrs, callback)`
+`new libxml.Element(doc, name, attrs, callback)`
 > Creates a new element object called `name` with `attrs` as its attributes  
 > **returns:** a new element object
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 > * **attrs** - a has of `{name => value}` pairs to set as attributes  
 > * **callback** - a function that will accept the new object as an argument  
 
-`new libxml.Element(name, attrs, content, callback)`
+`new libxml.Element(doc, name, attrs, content, callback)`
 > Creates a new element object called `name` with `attrs` as its attributes  
 > **returns:** a new element object
 > ### Arguments  
+> * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
 > * **attrs** - a has of `{name => value}` pairs to set as attributes  
 > * **content** - a string representing the content to add to the node  
