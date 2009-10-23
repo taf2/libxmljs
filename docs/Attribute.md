@@ -32,23 +32,11 @@ Methods
 > Get the attribute name  
 > **returns:** a string representing the name of the attribute
 
-`name(new_name)`
-> Set the attribute name to `new_name`  
-> **returns:** the attribute object
-> ### Arguments  
-> * **new_name** - a string representing the new name for the attribute  
-
 `namespace()`
 > See [Element#namespace()](/element)
 
 `namespace(ns)`
 > See [Element#namespace(ns)](/element)
-
-`namespace(href)`
-> See [Element#namespace(href)](/element)
-
-`namespace(prefix, href)`
-> See [Element#namespace(prefix, href)](/element)
 
 `next_sibling()`
 > Get the next sibling  
