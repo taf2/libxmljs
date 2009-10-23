@@ -27,7 +27,7 @@ Instantiation
 > ### Arguments  
 > * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
-> * **attrs** - a hash of `{name => value}` pairs to set as attributes  
+> * **attrs** - a hash of `{name: value}` pairs to set as attributes  
 
 `new libxml.Element(doc, name, callback)`
 > Creates a new element object called `name` then calls `callback` passing the  
@@ -44,7 +44,7 @@ Instantiation
 > ### Arguments  
 > * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
-> * **attrs** - a has of `{name => value}` pairs to set as attributes  
+> * **attrs** - a has of `{name: value}` pairs to set as attributes  
 > * **content** - a string representing the content to add to the node  
 
 `new libxml.Element(doc, name, attrs, callback)`
@@ -53,7 +53,7 @@ Instantiation
 > ### Arguments  
 > * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
-> * **attrs** - a has of `{name => value}` pairs to set as attributes  
+> * **attrs** - a has of `{name: value}` pairs to set as attributes  
 > * **callback** - a function that will accept the new object as an argument  
 
 `new libxml.Element(doc, name, attrs, content, callback)`
@@ -62,7 +62,7 @@ Instantiation
 > ### Arguments  
 > * **doc** - a document object to provide context for the node  
 > * **name** - a string representing the name of the element  
-> * **attrs** - a has of `{name => value}` pairs to set as attributes  
+> * **attrs** - a has of `{name: value}` pairs to set as attributes  
 > * **content** - a string representing the content to add to the node  
 > * **callback** - a function that will accept the new object as an argument  
 
@@ -86,20 +86,13 @@ Methods
 > Create a set of attributes from a hash  
 > **returns:** the element object
 > ### Arguments  
-> * **attr hash** - a has of `name => value` pairs  
+> * **attr hash** - a has of `{name: value}` pairs  
 
 `attr(attr)`
 > Add an attribute object to the node  
 > **returns:** the element object
 > ### Arguments  
 > * **attr** - an attribute object  
-
-`attr(name, value)`
-> Create a new attribute on the element named `name` with the value `value`  
-> **returns:** the element object
-> ### Arguments  
-> * **name** - a string representing the name of the attribute  
-> * **value** - a string representing the value of the attribute  
 
 `attrs()`
 > Get the list of attributes attached to the node  
