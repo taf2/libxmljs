@@ -9,9 +9,9 @@ helpers do
   end
 end
 
-get '/style.css' do
+get '/:sheet.css' do |sheet|
   content_type 'text/css', :charset => 'utf-8'
-  sass :'../sass/style'
+  sass :"../sass/#{sheet}"
 end
 
 get '/' do
