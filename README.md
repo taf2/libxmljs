@@ -2,13 +2,16 @@ LibXML bindings for Google's v8 javascript engine.
 
 It also plays nicely with [node.js](http://github.com/ry/node)
 
+## Basics
+### Links 
+* [GitHub](http://github.com/sprsquish/libxmljs)
+* [Docs](http://libxmljs.squishtech.com/)
 
-## Build
 ### Requirements
 
-> * [libxml](http://xmlsoft.org/)
-> * [v8](http://code.google.com/apis/v8/intro.html) _(for the standalone version)_
-> * [node.js](http://github.com/ry/node) _(for the node.js version)_
+* [libxml](http://xmlsoft.org/)
+* [v8](http://code.google.com/apis/v8/intro.html) _(for the standalone version)_
+* [node.js](http://github.com/ry/node) _(for the node.js version)_
 
 ### Building
 To build the node.js plugin use:
