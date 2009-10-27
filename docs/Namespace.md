@@ -24,10 +24,6 @@ Methods
 > Get the href of the namespace  
 > **returns:** a string representing the URI of the namespace
 
-`node()`
-> Get the node the namespace is defined on  
-> **returns:** a node object
-
 `prefix()`
 > Get the prefix of the namespace  
 > **returns:** a string representing the namespace's prefix or `null`
