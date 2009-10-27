@@ -19,4 +19,6 @@
       #content= @content
     %script{ :type => 'text/javascript', :src => 'http://www.google-analytics.com/ga.js' }
     %script{ :type => 'text/javascript' }
-      try { _gat._getTracker("UA-3755481-6")._trackPageview(); } catch(err) {}
+      var pageTracker = _gat._getTracker("UA-3755481-6");
+      pageTracker._initData();
+      pageTracker._trackPageview();
