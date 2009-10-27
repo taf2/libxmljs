@@ -24,12 +24,6 @@ Methods
 > Get the href of the namespace  
 > **returns:** a string representing the URI of the namespace
 
-`href(new_href)`
-> Set the URI of the namespace  
-> **returns:** the namespace object
-> ### Arguments  
-> * **new_href** - a string representing the new URI  
-
 `node()`
 > Get the node the namespace is defined on  
 > **returns:** a node object
@@ -37,9 +31,3 @@ Methods
 `prefix()`
 > Get the prefix of the namespace  
 > **returns:** a string representing the namespace's prefix or `null`
-
-`prefix(new_prefix)`
-> Set the prefix of the namespace  
-> **returns:** the namespace object
-> ### Arguments  
-> * **new_prefix** - a string or `null` representing the namespace's prefix  
