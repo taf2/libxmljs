@@ -69,6 +69,10 @@ Methods
 > A convenience method that returns the document  
 > **returns:** the document object
 
+`errors()`
+> An array of recoverable errors encountered while parsing the document  
+> **returns:** an array of [SyntaxErrors](/syntaxerror)
+
 `encoding()` 
 > Gets the document's encoding  
 > **returns:** a string representation of the document encoding
