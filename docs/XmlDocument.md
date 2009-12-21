@@ -1,5 +1,5 @@
-Document
-========
+XmlDocument
+===========
 
 The Document class represents an XML document. It can be created by
 instantiating an object using the "new" keyword or by parsing a document.
