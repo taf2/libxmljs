@@ -134,8 +134,31 @@ Methods
 > ### Arguments  
 > * **xpath** - must be a string representing the xpath to search  
 
-`get(xpath)`
-> This this is syntactic sugar for `find(xpath)[0]`  
+`find(xpath, ns_uri)`
+> Search the element's children by `xpath` within the `uri` namespace  
+> **returns:** an array of element objects
+> ### Arguments  
+> * **xpath** - must be a string representing the xpath to search  
+> * **ns_uri** - must be a string representing the namespace uri  
+> ### Example  
+> `doc.find("xmlns:child-name", "ns:uri")`
+
+`get(xpath, ns_uri)`
+> This this is syntactic sugar for `find(xpath, ns_uri)[0]`  
+> **returns:** a element object or `null`
+
+`find(xpath, namespaces)`
+> Search the element's children by `xpath` within the `uri` namespace  
+> **returns:** an array of element objects
+> ### Arguments  
+> * **xpath** - must be a string representing the xpath to search  
+> * **namespaces** - must be a hash representing the namespaces  
+> ### Example  
+> `doc.find("ns-1:child-name", {"ns-1": "ns:uri"})`  
+> `doc.find("ns-1:child1/ns-2:child2", {"ns-1": "ns:uri1", "ns-2": "ns:uri2"})`  
+
+`get(xpath, ns_uri)`
+> This this is syntactic sugar for `find(xpath, namespaces)[0]`  
 > **returns:** a element object or `null`
 
 `name()`
