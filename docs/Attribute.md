@@ -50,6 +50,10 @@ Methods
 > Get the previous sibling  
 > **returns:** an attribute object or `null`
 
+`remove()`
+> Remove the node from the context  
+> **returns:** the attribute
+
 `value()`
 > Get the value of the attribute  
 > **returns:** a string representing the attribute's value

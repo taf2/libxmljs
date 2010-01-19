@@ -214,6 +214,10 @@ Methods
 > Get the previous sibling  
 > **returns:** an element object or `null`
 
+`remove()`
+> Remove the node from the context  
+> **returns:** the node
+
 `text()`
 > Get the text content of the element  
 > **returns:** a string representing the content of the element
