@@ -200,6 +200,10 @@ Methods
 
 `nextSibling()`
 > Get the next sibling  
+> **returns:** a node object or `null`
+
+`nextElement()`
+> Get the next element sibling  
 > **returns:** an element object or `null`
 
 `parent()`
@@ -212,6 +216,10 @@ Methods
 
 `prevSibling()`
 > Get the previous sibling  
+> **returns:** a node object or `null`
+
+`prevSibling()`
+> Get the previous element sibling  
 > **returns:** an element object or `null`
 
 `remove()`
