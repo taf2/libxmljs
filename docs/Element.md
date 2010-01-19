@@ -108,14 +108,14 @@ Methods
 > Get all the node's children  
 > **returns:** an array of element objects
 
-`define_namespace(href)`
+`defineNamespace(href)`
 > Define a new namespace on the node using `href` for the URI  
 > This will only define the namespace but wont add it to the node  
 > **returns:** the new namespace
 > ### Arguments  
 > * **href** - a string representing the URI for the new namespace  
 
-`define_namespace(prefix, href)`
+`defineNamespace(prefix, href)`
 > Define a new namespace on the node using `href` for the URI and `prefix` as
 > the prefix  
 > This will only define the namespace but wont add it to the node  
@@ -198,7 +198,7 @@ Methods
 > * **prefix** - a string representing the namespace prefix  
 > * **href** - a string representing the namespace URI  
 
-`next_sibling()`
+`nextSibling()`
 > Get the next sibling  
 > **returns:** an element object or `null`
 
@@ -210,7 +210,7 @@ Methods
 > Get the xPath of the element  
 > **returns:** a string representing the xPath of the element
 
-`prev_sibling()`
+`prevSibling()`
 > Get the previous sibling  
 > **returns:** an element object or `null`
 

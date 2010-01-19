@@ -38,7 +38,7 @@ Methods
 `namespace(ns)`
 > See [Element#namespace(ns)](/element)
 
-`next_sibling()`
+`nextSibling()`
 > Get the next sibling  
 > **returns:** an attribute object or `null`
 
@@ -46,7 +46,7 @@ Methods
 > Get the node the attribute is attached to
 > **returns:** an element object
 
-`prev_sibling()`
+`prevSibling()`
 > Get the previous sibling  
 > **returns:** an attribute object or `null`
 
