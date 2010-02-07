@@ -46,10 +46,10 @@ Callbacks
 > Called on an open element tag  
 > ### Arguments  
 > * **elem** - a string representing the element name  
-> * **attrs** - an array of arrays: `[[key, value], [key, value]]`  
+> * **attrs** - an array of arrays: `[[key, prefix, uri, value]]`  
 > * **prefix** - a string representing the namespace prefix of the element  
 > * **uri** - the namespace URI of the element  
-> * **namespaces** - an array of arrays: `[[prefix, uri], [prefix, uri]]`  
+> * **namespaces** - an array of arrays: `[[prefix, uri]]`  
 
 `parser.onEndElementNS(function(elem, prefix, uri) {})`
 > Called at the close of an element  
