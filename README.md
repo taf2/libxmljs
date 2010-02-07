@@ -60,9 +60,9 @@ This will yield the same results.
 
 ### Parsing
 By file:
-    var doc = libxml.parseFile([filename]);
+    var doc = libxml.parseXmlFile([filename]);
 By String:
-    var doc = libxml.parseString([xmlString]);
+    var doc = libxml.parseXmlString([xmlString]);
 
 ### SAX Parsing
 Callbacks for SAX are created during the instantiation of the parser object.
