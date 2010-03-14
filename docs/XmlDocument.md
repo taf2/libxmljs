@@ -61,7 +61,7 @@ Methods
 > ### Arguments  
 > * **idx** - a zero indexed integer representing the child element to return  
 
-`children()`
+`childNodes()`
 > Get all the children of the root node  
 > **returns:** an array of element objects
 
