@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('Document traversal on a built document', function() {
   it('can get to the document from any node', function() {
     var gchild = null;

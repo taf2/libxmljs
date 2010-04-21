@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('A node attribute', function() {
   it('can be read', function() {
     // reading a node is implied during all tests

@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('Attribute', function() {
   var doc = null;
   var node = null;

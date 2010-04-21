@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('Parse error object', function() {
   var synErr = null;
   

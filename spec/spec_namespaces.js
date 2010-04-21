@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('A namespace', function() {
   it('can be created and not set', function() {
     var doc = new libxml.Document();

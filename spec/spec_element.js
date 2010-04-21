@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('An element node', function() {
   var doc = null;
   var elem = null;
@@ -58,6 +56,16 @@ describe('An element node', function() {
     assert(doc.get('/name1/new-child'));
   });
 
+    it('can have a child added from another document', function() {
+        var otherDoc = new libxml.Document();
+        otherDoc.node('name2');
+        var newChild = otherDoc.root().node('new-child');
+
+        elem.addChild(newChild);
+        assert(doc.get('/name1/new-child'));
+        assert(!otherDoc.get('/name2/new-child'));
+    });
+
   it('can describe its path', function() {
     var gchild = null, sibling = null;
     var doc = new libxml.Document(function(n) {
@@ -112,14 +120,45 @@ describe('An element node', function() {
     assertEqual('prev-sibling', children[1].name());
   });
 
+    it('can add a previous sibling from another document', function() {
+        var child1 = elem.node('child1');
+        var child2 = elem.node('child2');
+
+        var otherDoc = new libxml.Document();
+        otherDoc.node('name2');
+        var prevSibling = otherDoc.root().node('prev-sibling');
+        var addedSibling = child2.addPrevSibling(prevSibling);
+        var children = elem.childNodes();
+
+        assertEqual(3, children.length);
+        assertEqual('prev-sibling', children[1].name());
+        assert(!otherDoc.get('/name2/prev-sibling'));
+  });
+
   it('can add a next sibling', function() {
     var child1 = elem.node('child1');
     var child2 = elem.node('child2');
-    assertEqual(elem.childNodes().length, 2);
+
     var nextSibling = new libxml.Element(elem.doc(), 'next-sibling');
     var addedSibling = child1.addNextSibling(nextSibling);
     var children = elem.childNodes();
     assertEqual(3, children.length);
     assertEqual('next-sibling', children[1].name());
   });
+
+    it('can add a next sibling from another document', function() {
+        var child1 = elem.node('child1');
+        var child2 = elem.node('child2');
+
+        var otherDoc = new libxml.Document();
+        otherDoc.node('name2');
+        var nextSibling = otherDoc.root().node('next-sibling');
+        var addedSibling = child1.addNextSibling(nextSibling);
+        var children = elem.childNodes();
+
+        assertEqual(3, children.length);
+        assertEqual('next-sibling', children[1].name());
+        assert(!otherDoc.get('/name2/next-sibling'));
+    });
+
 });

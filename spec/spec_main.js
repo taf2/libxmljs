@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('libxmljs', function() {
   it('has a version number', function() {
     if (specVerbose) print(libxml.version+" ");

@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('Finding a node', function() {
   it('can be done with #get', function() {
     var child = null;

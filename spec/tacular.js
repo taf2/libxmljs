@@ -45,7 +45,7 @@
  * Copyright 2009, Jon Crosby, MIT Licensed
  *
  */
-process.mixin(require('sys'));
+ require('./jsutils').mixin(GLOBAL, require('sys'), require('./helpers'));
 
 (function() {
   var path = require('path');

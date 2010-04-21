@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('Text node', function() {
   it('knows its type is "text"', function() {
     var doc = libxml.parseXmlString(

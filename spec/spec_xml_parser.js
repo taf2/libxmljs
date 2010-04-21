@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('Parsing XML', function() {
   var filename = path.dirname(__filename)+'/fixtures/parser.xml';
 

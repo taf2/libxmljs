@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 var recoverableFile = path.dirname(__filename)+'/fixtures/warnings/amp.html';
 var recoverableErrors = [
   { domain: 5,

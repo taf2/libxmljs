@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe("SAX Push Parser", function() {
   var callbacks = {};
   var filename = path.dirname(__filename)+'/fixtures/sax_parser.xml';

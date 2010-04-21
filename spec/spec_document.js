@@ -1,5 +1,3 @@
-process.mixin(require('./helpers'));
-
 describe('A new document', function() {
   it('can be instantiated with nothing', function() {
     var doc = new libxml.Document();
